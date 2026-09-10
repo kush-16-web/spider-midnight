@@ -2,7 +2,7 @@
   "name": "spider-midnight-theme",
   "displayName": "Spider Midnight - Aesthetic Dark Theme & Live Weather Companion",
   "description": "Modern atmospheric Spider-Man Midnight environment for VS Code with live real-time local weather companion, Comic Mono font, multi-color syntax, and custom spider icons.",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "publisher": "kushpandya",
   "icon": "assets/icon.png",
   "repository": {
@@ -24,65 +24,37 @@
     "onCommand:antigravity.mode.spiderman",
     "onCommand:antigravity.font.install",
     "onCommand:antigravity.spiderCompanion.toggle",
+    "onCommand:antigravity.spider.commit",
     "onView:antigravity.spiderCompanionView"
   ],
   "contributes": {
     "configurationDefaults": {
+      "[Spider-Man Midnight]": {
+        "editor.fontFamily": "'Comic Mono', monospace",
+        "editor.fontWeight": "normal",
+        "editor.fontSize": 14,
+        "editor.fontLigatures": false,
+        "editor.lineHeight": 24
+      },
       "[Antigravity Superhero]": {
         "editor.fontFamily": "'Comic Mono', 'Courier New', 'Courier', monospace",
         "editor.fontWeight": "bold",
         "editor.fontSize": 14,
         "editor.fontLigatures": false,
-        "editor.lineHeight": 24,
-        "workbench.colorCustomizations": {
-          "editor.background": "#1e1e2e",
-          "sideBar.background": "#181825",
-          "activityBar.background": "#181825",
-          "titleBar.activeBackground": "#181825",
-          "statusBar.background": "#181825"
-        }
+        "editor.lineHeight": 24
       },
       "[Antigravity Retro Arcade]": {
         "editor.fontFamily": "'VT323', 'Press Start 2P', 'Courier New', monospace",
         "editor.fontWeight": "normal",
         "editor.fontSize": 18,
         "editor.fontLigatures": false,
-        "editor.lineHeight": 28,
-        "workbench.colorCustomizations": {
-          "editor.background": "#24273a",
-          "sideBar.background": "#1e2030",
-          "activityBar.background": "#1e2030",
-          "titleBar.activeBackground": "#1e2030",
-          "statusBar.background": "#1e2030"
-        }
+        "editor.lineHeight": 28
       },
-      "[Spider-Man Midnight]": {
-        "editor.fontFamily": "'Comic Mono', monospace",
-        "editor.fontWeight": "normal",
-        "editor.fontSize": 14,
-        "editor.fontLigatures": false,
-        "editor.lineHeight": 24,
-        "workbench.colorCustomizations": {
-          "editor.background": "#16191f",
-          "sideBar.background": "#121418",
-          "activityBar.background": "#0e1014",
-          "activityBarBadge.background": "#61afef",
-          "activityBarBadge.foreground": "#0e1014",
-          "badge.background": "#61afef",
-          "badge.foreground": "#0e1014",
-          "titleBar.activeBackground": "#0e1014",
-          "statusBar.background": "#0e1014",
-          "panel.background": "#16191f",
-          "panelTitle.activeForeground": "#ffffff",
-          "panelTitle.activeBorder": "#e05a5a",
-          "panelTitle.inactiveForeground": "#abb2bf",
-          "panelSectionHeader.foreground": "#abb2bf",
-          "terminal.background": "#16191f",
-          "tab.activeBackground": "#16191f",
-          "tab.activeForeground": "#ffffff",
-          "tab.inactiveBackground": "#121418",
-          "tab.inactiveForeground": "#abb2bf"
-        }
+      "[superhero-code]": {
+        "editor.fontFamily": "'Comic Mono', monospace"
+      },
+      "[retrogame-code]": {
+        "editor.fontFamily": "'VT323', 'Press Start 2P', monospace"
       }
     },
     "configuration": {
@@ -139,8 +111,28 @@
         "command": "antigravity.font.install",
         "title": "Antigravity: Install Bundled 8-Bit Fonts to This Machine",
         "category": "Antigravity"
+      },
+      {
+        "command": "antigravity.spider.commit",
+        "title": "Spider-Man: Commit Staged Changes (Web Strike)",
+        "icon": "./icons/spiderman/spider-web-action.svg",
+        "category": "Spider-Man"
       }
     ],
+    "menus": {
+      "scm/inputBox": [
+        {
+          "command": "antigravity.spider.commit",
+          "group": "inline"
+        }
+      ],
+      "scm/title": [
+        {
+          "command": "antigravity.spider.commit",
+          "group": "navigation"
+        }
+      ]
+    },
     "languages": [
       {
         "id": "superhero-code",

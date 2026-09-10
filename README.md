@@ -27,17 +27,19 @@
 ![Spider Companion](https://raw.githubusercontent.com/kush-16-web/spider-midnight/main/assets/screenshots/spider_companion.png)
 
 The bottom ambient companion automatically links to your local real-world weather:
-- **Automatic City & Weather Detection:** Displays your local city name and temperature directly on the status badge:  
-  `Good Morning • 10:30 AM • 📍 New York 21°C 🌧️ Rain`
+- **Floating Weather Island:** Displays your local city name, temperature, and live condition emoji:  
+  `📍 SURAT 31°C ☀️`
+- **Lively Spider Companion:** Top-left corner web features an animated pixel spider that crawls across web strands, rappels down on silk, swings, and explores!
+- **Real-Time Clock Ticker:** Pinned to the bottom-right corner with smooth per-second updates.
 - **Atmospheric Canvas Reactions:**
   - 🌧️ **Rain Outside:** Activates smooth falling pixel raindrops, ambient mist, and wet asphalt ripples.
-  - ⛈️ **Thunderstorm:** Rainy sky with subtle ambient lightning flashes across the city spires.
+  - ⛈️ **Thunderstorm:** Rainy sky with arcade lightning flashes across the city spires.
   - ❄️ **Snowing:** Gentle falling pixel snowflakes drifting across the skyline.
   - ☁️ **Cloudy / Overcast:** Soft drifting pixel clouds across the city silhouettes.
   - ☀️ / 🌙 **Clear Skies:** Radiant daytime sun or glowing full moon with twinkling stars.
-- **Click to Cycle:** You can click the time/weather badge at any time to manually cycle and preview all time and weather environments!
+- **Click to Cycle:** Click the floating location pill at any time to cycle and preview all time and weather environments!
 
-Toggle the companion anytime: `Ctrl+Shift+P` $\to$ **`Antigravity: Toggle Spider Ambient Companion`**.
+Toggle the companion anytime: `Ctrl+Shift+P` $\to$ **`Antigravity: Focus Ambient Companion Tray`**.
 
 ---
 
