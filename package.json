@@ -2,7 +2,7 @@
   "name": "spider-midnight-theme",
   "displayName": "Spider Midnight - Aesthetic Dark Theme & Live Weather Companion",
   "description": "Modern atmospheric Spider-Man Midnight environment for VS Code with live real-time local weather companion, Comic Mono font, multi-color syntax, and custom spider icons.",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "publisher": "kushpandya",
   "icon": "assets/icon.png",
   "repository": {
