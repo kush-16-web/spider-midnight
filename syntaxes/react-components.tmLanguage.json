@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "React Component Tag Scoping",
+  "scopeName": "react.tag.custom.injection",
+  "injectionSelector": "L:meta.tag",
+  "patterns": [
+    {
+      "match": "(</?)([A-Z][\\w]*(?:\\.[\\w]*)*)",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.tag.begin"
+        },
+        "2": {
+          "name": "entity.name.tag.custom"
+        }
+      }
+    }
+  ]
+}

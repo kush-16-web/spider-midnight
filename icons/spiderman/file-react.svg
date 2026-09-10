@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <!-- Glowing Spider-Web Lattice Background -->
+  <g stroke="#e05a5a" stroke-width="0.75" opacity="0.85">
+    <!-- Web Radial Spines -->
+    <line x1="12" y1="2" x2="12" y2="22" stroke-dasharray="1.5 1"/>
+    <line x1="2" y1="12" x2="22" y2="12" stroke-dasharray="1.5 1"/>
+    <line x1="4.9" y1="4.9" x2="19.1" y2="19.1" stroke-dasharray="1.5 1"/>
+    <line x1="4.9" y1="19.1" x2="19.1" y2="4.9" stroke-dasharray="1.5 1"/>
+    <!-- Outer Web Octagonal Ring -->
+    <polygon points="12,3.5 18,5.5 20.5,12 18,18.5 12,20.5 6,18.5 3.5,12 6,5.5" stroke="#ff4d4d" stroke-width="0.8" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- React Atomic Orbital Rings (Tilted 0, 60, 120 deg) -->
+  <g stroke="#58c4dc" stroke-width="1.3" fill="none">
+    <ellipse cx="12" cy="12" rx="9.2" ry="3.6"/>
+    <ellipse cx="12" cy="12" rx="9.2" ry="3.6" transform="rotate(60 12 12)"/>
+    <ellipse cx="12" cy="12" rx="9.2" ry="3.6" transform="rotate(120 12 12)"/>
+  </g>
+
+  <!-- Web Nodes at Orbit Intersections -->
+  <circle cx="12" cy="4" r="0.9" fill="#ff4d4d"/>
+  <circle cx="12" cy="20" r="0.9" fill="#ff4d4d"/>
+  <circle cx="4.5" cy="8.2" r="0.9" fill="#ff4d4d"/>
+  <circle cx="19.5" cy="15.8" r="0.9" fill="#ff4d4d"/>
+  <circle cx="4.5" cy="15.8" r="0.9" fill="#ff4d4d"/>
+  <circle cx="19.5" cy="8.2" r="0.9" fill="#ff4d4d"/>
+
+  <!-- Glowing Nucleus Core -->
+  <circle cx="12" cy="12" r="2.2" fill="#58c4dc"/>
+  <circle cx="12" cy="12" r="1.1" fill="#ffffff"/>
+</svg>

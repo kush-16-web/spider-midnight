@@ -1,0 +1,53 @@
+{
+  "fonts": [
+    {
+      "family": "Press Start 2P",
+      "file": "PressStart2P-Regular.ttf",
+      "weight": "normal",
+      "style": "normal",
+      "purpose": "retro",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "VT323",
+      "file": "VT323-Regular.ttf",
+      "weight": "normal",
+      "style": "normal",
+      "purpose": "retro",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "family": "Comic Mono",
+      "file": "ComicMono.ttf",
+      "weight": "normal",
+      "style": "normal",
+      "purpose": "comic",
+      "license": "MIT License"
+    },
+    {
+      "family": "Comic Mono",
+      "file": "ComicMono-Bold.ttf",
+      "weight": "bold",
+      "style": "normal",
+      "purpose": "comic",
+      "license": "MIT License"
+    }
+  ],
+  "license": {
+    "Press Start 2P": {
+      "source": "https://github.com/google/fonts/tree/main/ofl/pressstart2p",
+      "license": "SIL Open Font License 1.1",
+      "copyright": "Copyright (c) 2011, Cody 'CodeMan38' Boisclair"
+    },
+    "VT323": {
+      "source": "https://github.com/google/fonts/tree/main/ofl/vt323",
+      "license": "SIL Open Font License 1.1",
+      "copyright": "Copyright (c) 2011, Peter Hull"
+    },
+    "Comic Mono": {
+      "source": "https://github.com/dtinth/comic-mono-font",
+      "license": "MIT License",
+      "copyright": "Copyright (c) 2018 dtinth"
+    }
+  }
+}

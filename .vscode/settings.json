@@ -1,0 +1,10 @@
+{
+  "workbench.colorTheme": "Spider-Man Midnight",
+  "workbench.iconTheme": "antigravity-spiderman-icons",
+  "antigravity.mode": "spiderman",
+  "editor.fontFamily": "'Comic Mono', monospace",
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": false,
+  "editor.lineHeight": 24
+}

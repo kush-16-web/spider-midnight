@@ -1,0 +1,226 @@
+{
+  "name": "spider-midnight-theme",
+  "displayName": "Spider Midnight - Aesthetic Dark Theme & Live Weather Companion",
+  "description": "Modern atmospheric Spider-Man Midnight environment for VS Code with live real-time local weather companion, Comic Mono font, multi-color syntax, and custom spider icons.",
+  "version": "1.0.1",
+  "publisher": "kushpandya",
+  "icon": "assets/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kush-16-web/spider-midnight"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes",
+    "Programming Languages"
+  ],
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:antigravity.mode.superhero",
+    "onCommand:antigravity.mode.retro",
+    "onCommand:antigravity.mode.spiderman",
+    "onCommand:antigravity.font.install",
+    "onCommand:antigravity.spiderCompanion.toggle",
+    "onView:antigravity.spiderCompanionView"
+  ],
+  "contributes": {
+    "configurationDefaults": {
+      "[Antigravity Superhero]": {
+        "editor.fontFamily": "'Comic Mono', 'Courier New', 'Courier', monospace",
+        "editor.fontWeight": "bold",
+        "editor.fontSize": 14,
+        "editor.fontLigatures": false,
+        "editor.lineHeight": 24,
+        "workbench.colorCustomizations": {
+          "editor.background": "#1e1e2e",
+          "sideBar.background": "#181825",
+          "activityBar.background": "#181825",
+          "titleBar.activeBackground": "#181825",
+          "statusBar.background": "#181825"
+        }
+      },
+      "[Antigravity Retro Arcade]": {
+        "editor.fontFamily": "'VT323', 'Press Start 2P', 'Courier New', monospace",
+        "editor.fontWeight": "normal",
+        "editor.fontSize": 18,
+        "editor.fontLigatures": false,
+        "editor.lineHeight": 28,
+        "workbench.colorCustomizations": {
+          "editor.background": "#24273a",
+          "sideBar.background": "#1e2030",
+          "activityBar.background": "#1e2030",
+          "titleBar.activeBackground": "#1e2030",
+          "statusBar.background": "#1e2030"
+        }
+      },
+      "[Spider-Man Midnight]": {
+        "editor.fontFamily": "'Comic Mono', monospace",
+        "editor.fontWeight": "normal",
+        "editor.fontSize": 14,
+        "editor.fontLigatures": false,
+        "editor.lineHeight": 24,
+        "workbench.colorCustomizations": {
+          "editor.background": "#16191f",
+          "sideBar.background": "#121418",
+          "activityBar.background": "#0e1014",
+          "activityBarBadge.background": "#61afef",
+          "activityBarBadge.foreground": "#0e1014",
+          "badge.background": "#61afef",
+          "badge.foreground": "#0e1014",
+          "titleBar.activeBackground": "#0e1014",
+          "statusBar.background": "#0e1014",
+          "panel.background": "#16191f",
+          "panelTitle.activeForeground": "#ffffff",
+          "panelTitle.activeBorder": "#e05a5a",
+          "panelTitle.inactiveForeground": "#abb2bf",
+          "panelSectionHeader.foreground": "#abb2bf",
+          "terminal.background": "#16191f",
+          "tab.activeBackground": "#16191f",
+          "tab.activeForeground": "#ffffff",
+          "tab.inactiveBackground": "#121418",
+          "tab.inactiveForeground": "#abb2bf"
+        }
+      }
+    },
+    "configuration": {
+      "title": "Antigravity Hero Retro",
+      "properties": {
+        "antigravity.mode": {
+          "type": "string",
+          "enum": [
+            "superhero",
+            "retro",
+            "spiderman"
+          ],
+          "enumDescriptions": [
+            "Catppuccin Superhero pastel palette, hero file icons, bold Comic Mono font.",
+            "Catppuccin Retro Arcade Macchiato palette, pixel gamepad icons, 8-bit VT323 / Press Start 2P font.",
+            "Eye-comfy Spider-Man Midnight palette, spider emblem file icons, web-string attribute scopes, solid matte charcoal panels."
+          ],
+          "default": "spiderman",
+          "markdownDescription": "Active visual preset. Changing this value instantly swaps the color theme, file icon theme, and editor font."
+        }
+      }
+    },
+    "views": {
+      "panel": [
+        {
+          "type": "webview",
+          "id": "antigravity.spiderCompanionView",
+          "name": "Ambient Companion"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "antigravity.spiderCompanion.toggle",
+        "title": "Antigravity: Focus Ambient Companion Tray",
+        "category": "Antigravity"
+      },
+      {
+        "command": "antigravity.mode.superhero",
+        "title": "Antigravity: Switch to Superhero Mode",
+        "category": "Antigravity"
+      },
+      {
+        "command": "antigravity.mode.retro",
+        "title": "Antigravity: Switch to Retro Game Mode",
+        "category": "Antigravity"
+      },
+      {
+        "command": "antigravity.mode.spiderman",
+        "title": "Antigravity: Switch to Spider-Man Midnight Mode",
+        "category": "Antigravity"
+      },
+      {
+        "command": "antigravity.font.install",
+        "title": "Antigravity: Install Bundled 8-Bit Fonts to This Machine",
+        "category": "Antigravity"
+      }
+    ],
+    "languages": [
+      {
+        "id": "superhero-code",
+        "aliases": [
+          "Superhero Code",
+          "superhero-code"
+        ],
+        "extensions": [
+          ".hero",
+          ".marvel"
+        ],
+        "configuration": "./languages/superhero-language-configuration.json"
+      },
+      {
+        "id": "retrogame-code",
+        "aliases": [
+          "Retro Game Code",
+          "retrogame-code"
+        ],
+        "extensions": [
+          ".game",
+          ".retro"
+        ],
+        "configuration": "./languages/retrogame-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "superhero-code",
+        "scopeName": "source.hero",
+        "path": "./syntaxes/superhero.tmLanguage.json"
+      },
+      {
+        "language": "retrogame-code",
+        "scopeName": "source.game",
+        "path": "./syntaxes/retrogame.tmLanguage.json"
+      },
+      {
+        "scopeName": "react.tag.custom.injection",
+        "path": "./syntaxes/react-components.tmLanguage.json",
+        "injectTo": [
+          "source.tsx",
+          "source.jsx",
+          "text.html.basic"
+        ]
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "antigravity-hero-icons",
+        "label": "Antigravity Superhero Icons",
+        "path": "./icons/superhero/icon-theme.json"
+      },
+      {
+        "id": "antigravity-retro-icons",
+        "label": "Antigravity Retro Gamepad Icons",
+        "path": "./icons/retro/icon-theme.json"
+      },
+      {
+        "id": "antigravity-spiderman-icons",
+        "label": "Antigravity Spider-Man Emblem Icons",
+        "path": "./icons/spiderman/icon-theme.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Antigravity Superhero",
+        "uiTheme": "vs-dark",
+        "path": "./themes/catppuccin-superhero-theme.json"
+      },
+      {
+        "label": "Antigravity Retro Arcade",
+        "uiTheme": "vs-dark",
+        "path": "./themes/catppuccin-retro-arcade-theme.json"
+      },
+      {
+        "label": "Spider-Man Midnight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/spiderman-midnight-theme.json"
+      }
+    ]
+  }
+}

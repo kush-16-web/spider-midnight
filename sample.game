@@ -1,0 +1,26 @@
+// 8-BIT ARCADE ENGINE SCRIPT
+[STAGE 1: NEON CYBER CITY]
+
+1UP SCORE: 0148500
+HIGHSCORE: 0999990
+LIVES: 3
+CREDITS: 5
+
+READY
+INSERT COIN
+PRESS START
+
+function spawnPlayer(spawnX, spawnY) {
+    let baseSpeed = 16;
+    let initialHealth = 100;
+    initializeSprites(spawnX, spawnY, baseSpeed);
+    return true;
+}
+
+function executeSpecialMove(playerCode, comboInput) {
+    UP UP DOWN DOWN LEFT RIGHT LEFT RIGHT B A START
+    FIRE JUMP ATTACK
+    triggerSuperNova(playerCode, 0xFF);
+}
+
+spawnPlayer(128, 256);

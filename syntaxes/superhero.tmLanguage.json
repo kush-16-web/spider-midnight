@@ -1,0 +1,142 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Superhero Code",
+  "scopeName": "source.hero",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#headers" },
+    { "include": "#sound-effects" },
+    { "include": "#strings" },
+    { "include": "#functions" },
+    { "include": "#brackets" },
+    { "include": "#parentheses" },
+    { "include": "#characters" },
+    { "include": "#variables" },
+    { "include": "#numbers" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.hero",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.hero",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "headers": {
+      "patterns": [
+        {
+          "name": "markup.heading.hero",
+          "match": "^#{1,6}\\s+.*$"
+        },
+        {
+          "name": "markup.heading.hero",
+          "match": "^\\[(ISSUE|CHAPTER|PAGE|PANEL|ACT|SCENE)\\s*([^\\]]*)\\]"
+        }
+      ]
+    },
+    "sound-effects": {
+      "patterns": [
+        {
+          "name": "keyword.other.sound-effect.hero",
+          "match": "\\*([A-Z0-9!\\?\\-]+)\\*"
+        },
+        {
+          "name": "keyword.other.sound-effect.hero",
+          "match": "\\b(POW|BAM|KAPOW|THWIP|BOOM|SMASH|CRASH|ZAP|WHAM|SPLAT|KRAK|BANG)!+\\b"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.hero",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.hero",
+              "match": "\\\\."
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.single.hero",
+          "begin": "'",
+          "end": "'",
+          "patterns": [
+            {
+              "name": "constant.character.escape.hero",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*(?=\\()",
+          "captures": {
+            "1": {
+              "name": "entity.name.function.hero"
+            }
+          }
+        }
+      ]
+    },
+    "brackets": {
+      "patterns": [
+        {
+          "name": "punctuation.definition.bracket.curly.hero",
+          "match": "[\\{\\}]"
+        },
+        {
+          "name": "punctuation.definition.bracket.square.hero",
+          "match": "[\\[\\]]"
+        }
+      ]
+    },
+    "parentheses": {
+      "patterns": [
+        {
+          "name": "punctuation.definition.bracket.round.hero",
+          "match": "[\\(\\)]"
+        }
+      ]
+    },
+    "characters": {
+      "patterns": [
+        {
+          "match": "^\\s*([A-Z0-9\\-_ ]{2,30})\\s*:",
+          "captures": {
+            "1": {
+              "name": "variable.name.character.hero"
+            }
+          }
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.other.hero",
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hero",
+          "match": "\\b\\d+\\b"
+        }
+      ]
+    }
+  }
+}

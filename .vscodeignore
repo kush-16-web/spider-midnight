@@ -1,0 +1,9 @@
+.vscode/**
+.git/**
+.gitignore
+node_modules/**
+*.vsix
+scripts/gen-icons.js
+scripts/build-theme.js
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+# SPACE INVADERS PROTOCOL
+[ZONE: ALIEN MATRIX]
+
+SCORE: 0054320
+HIGHSCORE: 0088000
+LIVES: 2
+KEYS: 3
+
+function launchMissile(gridX, gridY) {
+    let memoryAddress = 0x1A00;
+    FIRE FIRE FIRE
+    updateScore(gridX, memoryAddress);
+}
+
+function checkGameOver(currentLives) {
+    if (currentLives <= 0) {
+        GAME OVER
+        CONTINUE
+    }
+}
+
+launchMissile(44, 88);

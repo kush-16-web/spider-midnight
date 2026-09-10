@@ -1,0 +1,13 @@
+# SECRET WARS: BATTLEWORLD PROTOCOL
+
+[SCENE 4]
+function unleashMutantPower(heroClass, strikeLevel) {
+    WOLVERINE: "Let's finish this, bub!"
+    *SNIKT!*
+    MAGNETO: "You cannot stop magnetic supremacy!"
+    *POW!*
+    *BAM!*
+    executeCombo(heroClass, strikeLevel);
+}
+
+unleashMutantPower("Omega", 100);

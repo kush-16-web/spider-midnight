@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <!-- Schematic Tech Frame -->
+  <rect x="2.5" y="2.5" width="19" height="19" rx="3.5" fill="#13161f" stroke="#252c3d" stroke-width="1.2"/>
+  <!-- Corner Schematic Grid Marks -->
+  <path d="M5 2.5 V5.5 H2.5 M19 2.5 V5.5 H21.5 M2.5 18.5 H5.5 V21.5 M21.5 18.5 H18.5 V21.5" stroke="#3e485e" stroke-width="0.8"/>
+  
+  <!-- Left Side Data Bus Terminals -->
+  <circle cx="6" cy="7.5" r="1.2" fill="#56b6c2"/>
+  <circle cx="6" cy="12" r="1.2" fill="#e5c07b"/>
+  <circle cx="6" cy="16.5" r="1.2" fill="#98c379"/>
+  
+  <!-- Schematic Circuit Traces -->
+  <path d="M7.2 7.5 H10.5 L12 9 H15" stroke="#56b6c2" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7.2 12 H14" stroke="#e5c07b" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M7.2 16.5 H10.5 L12 15 H16" stroke="#98c379" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Right Node Points / Data Registers -->
+  <rect x="15" y="8" width="4" height="2" rx="0.5" fill="#56b6c2" opacity="0.85"/>
+  <rect x="14" y="11" width="5" height="2" rx="0.5" fill="#e5c07b" opacity="0.85"/>
+  <rect x="16" y="14" width="3" height="2" rx="0.5" fill="#98c379" opacity="0.85"/>
+
+  <!-- Subtle Center Curly Bracket Glyph Trace in Web Crimson Accent -->
+  <path d="M10 5.5 C8.8 5.5 8.5 6.2 8.5 7.2 V9.5 C8.5 10.3 8 10.8 7.3 11 C8 11.2 8.5 11.7 8.5 12.5 V14.8 C8.5 15.8 8.8 16.5 10 16.5" stroke="#e05a5a" stroke-width="0.85" fill="none" opacity="0.4"/>
+</svg>
