@@ -7,10 +7,6 @@
 
 ---
 
-![Spider-Man Midnight Theme Preview](https://raw.githubusercontent.com/kush-16-web/spider-midnight/main/assets/screenshots/theme_preview.png)
-
----
-
 ## ✨ Features
 
 - 🕷️ **Spider-Man Midnight Theme** — Deep matte obsidian canvas (`#12131a`), custom midnight charcoal borders, vibrant crimson red accents, and electric cyan highlights.
