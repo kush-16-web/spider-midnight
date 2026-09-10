@@ -1,13 +1,13 @@
 # 🕷️ Spider Midnight: Aesthetic Theme, Font & Live Weather Companion
 
 <div align="center">
-  <img src="assets/icon.png" width="128" height="128" alt="Spider Midnight Logo" />
+  <img src="https://raw.githubusercontent.com/kush-16-web/spider-midnight/main/assets/icon.png" width="128" height="128" alt="Spider Midnight Logo" />
   <p><strong>A modern, atmospheric aesthetic environment for VS Code featuring the Spider-Man Midnight theme, real-time live local weather companion, Comic Mono font, and custom spider icons.</strong></p>
 </div>
 
 ---
 
-![Spider-Man Midnight Theme Preview](assets/screenshots/theme_preview.png)
+![Spider-Man Midnight Theme Preview](https://raw.githubusercontent.com/kush-16-web/spider-midnight/main/assets/screenshots/theme_preview.png)
 
 ---
 
@@ -24,7 +24,7 @@
 
 ## 🌦️ Live Real-Time Local Weather Engine
 
-![Spider Companion](assets/screenshots/spider_companion.png)
+![Spider Companion](https://raw.githubusercontent.com/kush-16-web/spider-midnight/main/assets/screenshots/spider_companion.png)
 
 The bottom ambient companion automatically links to your local real-world weather:
 - **Automatic City & Weather Detection:** Displays your local city name and temperature directly on the status badge:  
@@ -61,7 +61,7 @@ VS Code themes cannot automatically render custom fonts unless the font is insta
 
 ## 📁 Custom Folder & File Icons
 
-![Folder Icons](assets/screenshots/folder_icons.png)
+![Folder Icons](https://raw.githubusercontent.com/kush-16-web/spider-midnight/main/assets/screenshots/folder_icons.png)
 
 - **Folders:** Clean crimson spider-web folders with animated open/closed states.
 - **Languages:** Specialized badges for JavaScript, TypeScript, React JSX/TSX, Python, Markdown, HTML, CSS, and config files.
