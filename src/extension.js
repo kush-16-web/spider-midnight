@@ -105,10 +105,12 @@ async function installSystemFonts(manifest) {
   const destDir = userFontDir();
   fs.mkdirSync(destDir, { recursive: true });
   const files = ['ComicMono.ttf', 'ComicMono-Bold.ttf', 'VT323-Regular.ttf', 'PressStart2P-Regular.ttf'];
+  let found = 0;
   let copied = 0;
   for (const name of files) {
     const src = path.join(srcDir, name);
     if (!fs.existsSync(src)) continue;
+    found += 1;
     const dest = path.join(destDir, name);
     try {
       if (!fs.existsSync(dest) || fs.statSync(dest).size !== fs.statSync(src).size) {
@@ -122,7 +124,7 @@ async function installSystemFonts(manifest) {
   if (process.platform === 'win32') {
     await registerWindowsFonts();
   }
-  return copied;
+  return { found, copied };
 }
 
 async function cleanAndApplyColorCustomizations(mode) {
@@ -235,13 +237,16 @@ function activate(context) {
     }),
     vscode.commands.registerCommand('antigravity.font.install', async () => {
       try {
-        const copied = await installSystemFonts(context.extension);
-        if (copied === 0) {
+        const result = await installSystemFonts(context.extension);
+        if (result.found === 0) {
           vscode.window.showWarningMessage('No font files found in the extension bundle.');
           return;
         }
         const reload = 'Reload Window', cancel = 'Cancel';
-        const choice = await vscode.window.showInformationMessage(`${copied} bundled font(s) installed to your system. Reload to register them.`, reload, cancel);
+        const msg = result.copied > 0
+          ? `${result.copied} bundled font(s) installed to your system. Reload to register them.`
+          : 'All bundled fonts (Comic Mono, VT323) are already installed on this machine! Reload window to apply.';
+        const choice = await vscode.window.showInformationMessage(msg, reload, cancel);
         if (choice === reload) {
           await vscode.commands.executeCommand('workbench.action.reloadWindow');
         }
